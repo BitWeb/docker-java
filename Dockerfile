@@ -13,5 +13,6 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | te
     && apt-get -y install oracle-java8-set-default
     
 ENV JAVA_TOOL_OPTIONS -Dfile.encoding=UTF8
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle/jre/
 
 RUN java -version
